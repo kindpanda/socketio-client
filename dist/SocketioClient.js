@@ -40,7 +40,7 @@ exports.EVENTS = EVENTS;
 const DEFAULT_SOCKET_OPTIONS = {
   autoConnect: false,
   timeout: 5000,
-  transports: ['websocket'],
+  transports: ['polling', 'websocket'],
   reconnection: true
 };
 

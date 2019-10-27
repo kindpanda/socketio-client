@@ -29,7 +29,7 @@ export const EVENTS = Object.freeze({
 const DEFAULT_SOCKET_OPTIONS = {
   autoConnect: false,
   timeout: 5000,
-  transports: ['websocket'],
+  transports: ['polling', 'websocket'],
   reconnection: true,
 };
 
@@ -37,7 +37,6 @@ class SocketioClient extends EventEmitter {
   constructor(options) {
     super();
     const { serverAddress, logger = console, socketOptions = DEFAULT_SOCKET_OPTIONS, timeout = 5000 } = options;
-
     this.defaultTimeout = timeout;
     this.logger = logger;
     this.serverAddress = serverAddress;
