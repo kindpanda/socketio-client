@@ -1,6 +1,6 @@
 {
   "name": "@kindpanda/socketio-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Julien Tilap LA VINH <jlavinh@gmail.com>",
   "main": "dist/index.js",
